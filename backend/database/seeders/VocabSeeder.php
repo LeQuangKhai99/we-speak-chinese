@@ -127,9 +127,49 @@ class VocabSeeder extends Seeder
             'hanzi' => '谢谢',
             'pinyin' => 'xièxie',
             'meaning' => 'Cảm ơn',
-            'example' => '谢谢你的 giúp đỡ。',
+            'example' => '谢谢你的帮助。',
             'example_pinyin' => 'Xièxie nǐ de bāngzhù.',
             'example_meaning' => 'Cảm ơn sự giúp đỡ của bạn.'
+        ]);
+
+        Vocabulary::create([
+            'vocab_group_id' => $g1->id,
+            'hanzi' => '她',
+            'pinyin' => 'tā',
+            'meaning' => 'Cô ấy, bà ấy (ngôi thứ 3 nữ)',
+            'example' => '她是我的妈妈。',
+            'example_pinyin' => 'Tā shì wǒ de māma.',
+            'example_meaning' => 'Cô ấy là mẹ của tôi.'
+        ]);
+
+        Vocabulary::create([
+            'vocab_group_id' => $g1->id,
+            'hanzi' => '您',
+            'pinyin' => 'nín',
+            'meaning' => 'Ngài, quý khách (xưng hô tôn trọng)',
+            'example' => '老师，您好！',
+            'example_pinyin' => 'Lǎoshī, nín hǎo!',
+            'example_meaning' => 'Chào thầy/cô!'
+        ]);
+
+        Vocabulary::create([
+            'vocab_group_id' => $g1->id,
+            'hanzi' => '不',
+            'pinyin' => 'bù',
+            'meaning' => 'Không (phủ định)',
+            'example' => '我不是学生。',
+            'example_pinyin' => 'Wǒ bú shì xuésheng.',
+            'example_meaning' => 'Tôi không phải là học sinh.'
+        ]);
+
+        Vocabulary::create([
+            'vocab_group_id' => $g1->id,
+            'hanzi' => '再见',
+            'pinyin' => 'zàijiàn',
+            'meaning' => 'Tạm biệt',
+            'example' => '妈妈，再见！',
+            'example_pinyin' => 'Māma, zàijiàn!',
+            'example_meaning' => 'Tạm biệt mẹ!'
         ]);
 
         $g2 = VocabGroup::create([
@@ -169,6 +209,46 @@ class VocabSeeder extends Seeder
             'example_meaning' => 'Năm nay là năm 2026.'
         ]);
 
+        Vocabulary::create([
+            'vocab_group_id' => $g2->id,
+            'hanzi' => '月',
+            'pinyin' => 'yuè',
+            'meaning' => 'Tháng',
+            'example' => '今天是十二月一号。',
+            'example_pinyin' => 'Jīntiān shì shí' . "'" . 'èr yuè yī hào.',
+            'example_meaning' => 'Hôm nay là ngày 1 tháng 12.'
+        ]);
+
+        Vocabulary::create([
+            'vocab_group_id' => $g2->id,
+            'hanzi' => '号',
+            'pinyin' => 'hào',
+            'meaning' => 'Ngày, số',
+            'example' => '你的生日是几号？',
+            'example_pinyin' => 'Nǐ de shēngrì shì jǐ hào?',
+            'example_meaning' => 'Sinh nhật của bạn là ngày mấy?'
+        ]);
+
+        Vocabulary::create([
+            'vocab_group_id' => $g2->id,
+            'hanzi' => '星期',
+            'pinyin' => 'xīngqī',
+            'meaning' => 'Tuần, thứ',
+            'example' => '今天星期天。',
+            'example_pinyin' => 'Jīntiān xīngqītiān.',
+            'example_meaning' => 'Hôm nay là chủ nhật.'
+        ]);
+
+        Vocabulary::create([
+            'vocab_group_id' => $g2->id,
+            'hanzi' => '点',
+            'pinyin' => 'diǎn',
+            'meaning' => 'Giờ, điểm',
+            'example' => '我们九点上课。',
+            'example_pinyin' => 'Wǒmen jiǔ diǎn shàngkè.',
+            'example_meaning' => 'Chúng ta học lúc 9 giờ.'
+        ]);
+
         // HSK 2
         $h2Set = $sets['H2'];
         $g3 = VocabGroup::create([
@@ -206,6 +286,46 @@ class VocabSeeder extends Seeder
             'example' => '外面下雨了。',
             'example_pinyin' => 'Wàimiàn xià yǔ le.',
             'example_meaning' => 'Bên ngoài trời mưa rồi.'
+        ]);
+
+        Vocabulary::create([
+            'vocab_group_id' => $g3->id,
+            'hanzi' => '冷',
+            'pinyin' => 'lěng',
+            'meaning' => 'Lạnh',
+            'example' => '今天天气太冷了。',
+            'example_pinyin' => 'Jīntiān tiānqì tài lěng le.',
+            'example_meaning' => 'Hôm nay thời tiết lạnh quá.'
+        ]);
+
+        Vocabulary::create([
+            'vocab_group_id' => $g3->id,
+            'hanzi' => '热',
+            'pinyin' => 'rè',
+            'meaning' => 'Nóng',
+            'example' => '北京的夏天很热。',
+            'example_pinyin' => 'Běijīng de xiàtiān hěn rè.',
+            'example_meaning' => 'Mùa hè ở Bắc Kinh rất nóng.'
+        ]);
+
+        Vocabulary::create([
+            'vocab_group_id' => $g3->id,
+            'hanzi' => '下雪',
+            'pinyin' => 'xià xuě',
+            'meaning' => 'Tuyết rơi',
+            'example' => '外面下雪了，好漂亮！',
+            'example_pinyin' => 'Wàimiàn xià xuě le, hǎo piàoliang!',
+            'example_meaning' => 'Bên ngoài tuyết rơi rồi, đẹp quá!'
+        ]);
+
+        Vocabulary::create([
+            'vocab_group_id' => $g3->id,
+            'hanzi' => '风',
+            'pinyin' => 'fēng',
+            'meaning' => 'Gió',
+            'example' => '刮大风了，快关窗户。',
+            'example_pinyin' => 'Guā dàfēng le, kuài guān chuānghu.',
+            'example_meaning' => 'Gió to rồi, mau đóng cửa sổ lại.'
         ]);
 
         // Put placeholder groups for other sets to prevent UI being empty
